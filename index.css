@@ -1,5 +1,5 @@
 :root{
-    --background-color: #314453;
+    --background-color: #314453b6;
     --darker-background-color: #243848;
     --accent-color: #41dce1;
     --text-color:#ffffff;
@@ -8,7 +8,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-size: 20px;
+    font-size: 17px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: var(--text-color);
 }
@@ -20,7 +20,9 @@ body{
     height: 100%;
     background-image: url(Hintergrung1.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-position: center; 
+    background-size: 100% 100%;
+    
 }
 nav{
     height: var(--navbar-height);
@@ -62,6 +64,7 @@ nav li:hover{
 
     text-decoration: none;
 } 
+
 .dropdown{
     height: min-content;
     width: 200px;
@@ -114,6 +117,8 @@ nav input[type="checkbox"]{
     background-color: var(--text-color);
     border-radius: 100px;
 }
+
+
 @media(max-width:850px){
     .toggle_button{
         display: flex;
@@ -166,4 +171,89 @@ nav input[type="checkbox"]{
     #toggle_button:checked ~ ul{
         display: block;
     }
+}
+
+
+
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #314453ad;
+    height: auto;
+    width: 100vw;
+    font-family: open sans-serif;
+    padding-top:5px;
+    color: white;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3{
+    font-size: 1.4rem;
+    font-weight: 400px;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 5px auto;
+    line-height: 1px;
+    font-size: 12px;
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 0.5rem 0;
+}
+
+.socials li{
+    margin: 0 10px;
+}
+
+.socials a{
+    text-decoration: none;
+    color: white;
+}
+.socials a i{
+    font-size: 1.5rem;
+    
+    transition: color .4s ease;
+}
+
+.socials a:hover i{
+    color: aqua;
+}
+
+.footer-bottom{
+    background-color: #1d2933;
+    width: 100vw;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 1px;
+    text-transform: capitalize;
+}
+
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 100;
+}
+
+h3{
+    font-size: 10px;
 }
